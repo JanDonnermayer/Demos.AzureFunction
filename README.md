@@ -29,3 +29,4 @@
 ## Setup Build & Deploy Pipeline
 
     https://www.aaron-powell.com/posts/2020-01-10-deploying-azure-functions-with-github-actions/
+    Thanks! 
