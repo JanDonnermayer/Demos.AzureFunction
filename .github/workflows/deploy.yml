@@ -34,7 +34,7 @@ jobs:
         runs-on: ubuntu-latest
         needs: [build]
         env:
-            FUNC_APP_NAME: AzureFunctionsDemo
+            FUNC_APP_NAME: donnermayer-AzureFunctionsDemo
         steps:
             - name: Download website
               uses: actions/download-artifact@v1
