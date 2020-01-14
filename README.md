@@ -17,7 +17,7 @@
 
 ### Create Principal for secrets.AZURE_CREDENTIALS
 
-    az ad sp create-for-rbac --name "{AppName}"
+    az ad sp create-for-rbac --name "AzureFunctionsDemo" --sdk-auth
 
 ## Make
 
