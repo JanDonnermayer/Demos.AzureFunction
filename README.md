@@ -24,7 +24,7 @@
     dotnet new func
     dotnet new http
     dotnet build
-    func start --script-root src\bin\Debug\netcoreapp3.0
+    func start --script-root bin\Debug\netcoreapp3.0
 
 ## Setup Build & Deploy Pipeline
 

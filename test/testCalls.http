@@ -1,2 +1,5 @@
-GET http://localhost:7071/api/AzureFunctionsDemo?name=Jan
+GET http://localhost:7071/api/AzureFunctionsDemo?name=Jan 
 
+###
+
+GET http://localhost:7072/api/AzureFunctionsDemo?name=Jan  
