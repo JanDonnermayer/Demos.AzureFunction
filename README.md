@@ -11,7 +11,7 @@
 
     choco install azure-functions-core-tools
 
-### Install Azure-Functions-CLI
+### Install Azure-CLI
 
     Invoke-WebRequest -Uri https://aka.ms/installazurecliwindows -OutFile .\AzureCLI.msi; Start-Process msiexec.exe -Wait -ArgumentList '/I AzureCLI.msi /quiet'
 
