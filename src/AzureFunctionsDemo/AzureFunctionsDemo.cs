@@ -20,8 +20,8 @@ namespace Company.Function
             log.LogInformation("C# HTTP trigger function processed a request.");
 
             string name = req.Query["name"];
-            int x = (int)req.Query["x"];
-            int y = (int)req.Query["y"];
+            int x = Convert.ToInt32(req.Query["x"]);
+            int y = Convert.ToInt32(req.Query["y"]);
 
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             dynamic data = JsonConvert.DeserializeObject(requestBody);
