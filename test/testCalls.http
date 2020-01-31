@@ -1,7 +1,9 @@
 GET https://donnermayer-azurefunctionsdemo.azurewebsites.net/api/AzureFunctionsDemo
 
 {
-    "name" : "Elisa"
+    "name" : "Elisaa",
+    "x" : 1,
+    "y" : 2
 }
 ###
 
