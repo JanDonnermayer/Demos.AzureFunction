@@ -20,13 +20,16 @@ namespace Company.Function
             log.LogInformation("C# HTTP trigger function processed a request.");
 
             string name = req.Query["name"];
+            int x = req.Query["x"];
+            int y = req.Query["y"];
 
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             dynamic data = JsonConvert.DeserializeObject(requestBody);
             name = name ?? data?.name;
+            var sum = x + y;
 
             return name != null
-                ? (ActionResult)new OkObjectResult($"Hello, {name}")
+                ? (ActionResult)new OkObjectResult($"Hello, {name}! {x} + {y} = {sum}")
                 : new BadRequestObjectResult("Please pass a name on the query string or in the request body");
         }
     }

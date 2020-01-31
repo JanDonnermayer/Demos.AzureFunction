@@ -1,5 +1,8 @@
-GET http://localhost:7071/api/AzureFunctionsDemo?name=Jan 
+GET https://donnermayer-azurefunctionsdemo.azurewebsites.net/api/AzureFunctionsDemo
 
+{
+    "name" : "Elisa"
+}
 ###
 
 GET http://localhost:7072/api/AzureFunctionsDemo?name=Jan  
