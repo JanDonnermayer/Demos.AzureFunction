@@ -8,9 +8,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace Company.Function
+namespace AzureFunctionsDemo
 {
-    public static class GreeterFunction
+    public static class DemoFunction
     {
         [FunctionName("AzureFunctionsDemo")]
         public static async Task<IActionResult> ExecuteAsync(

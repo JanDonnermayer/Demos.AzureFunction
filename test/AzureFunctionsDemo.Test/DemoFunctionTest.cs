@@ -3,7 +3,6 @@ using Moq;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Http;
 using System.IO;
-using Company.Function;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http.Internal;
@@ -38,7 +37,7 @@ namespace AzureFunctionsDemo.Test
                 .Returns(stream);
 
             // Act
-            var response = await GreeterFunction
+            var response = await DemoFunction
                 .ExecuteAsync(request, logger)
                 .ConfigureAwait(false);
 
