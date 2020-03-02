@@ -21,6 +21,9 @@ jobs:
               with:
                   dotnet-version: ${{ env.DOTNET_VERSION }}
 
+            - name: Test functions
+              run: dotnet test --configuration Release
+
             - name: Publish functions
               run: dotnet publish --configuration Release --output ${{ env.OUTPUT_PATH }}
             
