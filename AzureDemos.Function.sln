@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsDemo", "src\AzureFunctionsDemo\AzureFunctionsDemo.csproj", "{F07CF028-E6EC-4C4E-A37F-9794E4E71801}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureDemos.Function", "src\AzureDemos.Function\AzureDemos.Function.csproj", "{F07CF028-E6EC-4C4E-A37F-9794E4E71801}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{68A23EE3-7298-473B-842F-8E4EF8F43F3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsDemo.Test", "test\AzureFunctionsDemo.Test\AzureFunctionsDemo.Test.csproj", "{9B6FF93B-ECF4-49CE-BF2B-DCAFA2A1F06D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureDemos.Function.Test", "test\AzureDemos.Function.Test\AzureDemos.Function.Test.csproj", "{9B6FF93B-ECF4-49CE-BF2B-DCAFA2A1F06D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

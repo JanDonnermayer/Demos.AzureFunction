@@ -1,4 +1,4 @@
-# AzureFunctionsDemo
+# AzureDemos.Function
 
 ## Setup
 
@@ -17,14 +17,14 @@
 
 ### Create Principal for secrets.AZURE_CREDENTIALS
 
-    az ad sp create-for-rbac --name "AzureFunctionsDemo" --sdk-auth
+    az ad sp create-for-rbac --name "AzureDemos.Function" --sdk-auth
 
 ## Make
 
     dotnet new func
     dotnet new http
     dotnet build
-    func start --script-root src/AzureFunctionsDemo/bin/Debug/netcoreapp3.0
+    func start --script-root src/AzureDemos.Function/bin/Debug/netcoreapp3.0
 
 ## Setup Build & Deploy Pipeline
 
