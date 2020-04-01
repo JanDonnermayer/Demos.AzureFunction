@@ -10,7 +10,7 @@ using Newtonsoft.Json;
 
 namespace AzureDemos.Function
 {
-    public static class DemoFunction
+    public static class GreeterFunction
     {
         [FunctionName("AzureDemos.Function")]
         public static async Task<IActionResult> ExecuteAsync(

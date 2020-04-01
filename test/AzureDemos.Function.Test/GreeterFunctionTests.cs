@@ -37,7 +37,7 @@ namespace AzureDemos.Function.Test
                 .Returns(stream);
 
             // Act
-            var response = await DemoFunction
+            var response = await GreeterFunction
                 .ExecuteAsync(request, logger)
                 .ConfigureAwait(false);
 
