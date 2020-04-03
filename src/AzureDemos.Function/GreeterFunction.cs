@@ -7,6 +7,7 @@ using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using Microsoft.Extensions.Configuration;
 
 namespace AzureDemos.Function
 {
@@ -25,10 +26,15 @@ namespace AzureDemos.Function
                 string requestBody = await reader.ReadToEndAsync().ConfigureAwait(false);
                 dynamic data = JsonConvert.DeserializeObject(requestBody);
 
-                var name = data?.name;
+                string name = data?.name;
+
+                var config = new ConfigurationBuilder()
+                    .AddObject(new { name })
+                    .AddObject(new { message = "Hello $(name)!" })
+                    .Build();
 
                 return name != null
-                    ? (ActionResult)new OkObjectResult($"Hello, {name}!")
+                    ? (ActionResult)new OkObjectResult(config.ResolveValue("message"))
                     : new BadRequestObjectResult("Please pass a name on the query string or in the request body");
             }
             catch (System.Exception ex)
