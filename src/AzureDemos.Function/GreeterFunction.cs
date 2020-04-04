@@ -13,7 +13,7 @@ namespace AzureDemos.Function
 {
     public static class GreeterFunction
     {
-        [FunctionName("AzureDemos.Function")]
+        [FunctionName("GreeterFunction")]
         public static async Task<IActionResult> ExecuteAsync(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger logger)
@@ -29,8 +29,10 @@ namespace AzureDemos.Function
                 string name = data?.name;
 
                 var config = new ConfigurationBuilder()
-                    .AddObject(new { name })
-                    .AddObject(new { message = "Hello $(name)!" })
+                    .AddObject(new {
+                        name,
+                        message = "Hello $(name)!"
+                    })
                     .Build();
 
                 return name != null

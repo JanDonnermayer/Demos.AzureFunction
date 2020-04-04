@@ -1,4 +1,4 @@
-$address = 'https://donnermayer-azurefunctionsdemo.azurewebsites.net/api/AzureDemos.Function'
+$address = 'https://donnermayer-azurefunctionsdemo.azurewebsites.net/api/GreeterFunction'
 
 $body = ConvertTo-Json @{
     name = "Jan"
