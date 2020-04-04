@@ -26,17 +26,17 @@ namespace AzureDemos.Function
                 string requestBody = await reader.ReadToEndAsync().ConfigureAwait(false);
                 dynamic data = JsonConvert.DeserializeObject(requestBody);
 
-                string name = data?.name;
+                logger.LogTrace(requestBody);
 
                 var config = new ConfigurationBuilder()
                     .AddObject(new {
-                        name,
+                        name = (string)data?.name,
                         message = "Hello $(name)!"
                     })
                     .Build();
 
-                return name != null
-                    ? (ActionResult)new OkObjectResult(config.ResolveValue("message"))
+                return config.TryResolveValue("message", out var message)
+                    ? (ActionResult)new OkObjectResult(message)
                     : new BadRequestObjectResult("Please pass a name on the query string or in the request body");
             }
             catch (System.Exception ex)
