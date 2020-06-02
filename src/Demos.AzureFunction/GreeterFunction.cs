@@ -12,7 +12,7 @@ namespace Demos.AzureFunction
 {
     public static class GreeterFunction
     {
-        [FunctionName("Demos.AzureFunction")]
+        [FunctionName("GreeterFunction")]
         public static async Task<IActionResult> ExecuteAsync(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger logger)
