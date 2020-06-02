@@ -1,10 +1,8 @@
-GET https://donnermayer-Demos.AzureFunction.azurewebsites.net/api/Demos.AzureFunction
+GET https://donnermayer-azurefunctionsdemo.azurewebsites.net/api/GreeterFunction
 
 {
     "name" : "Elisaa",
-    "x" : "1.0",
-    "y" : "2.0"
 }
 ###
 
-GET http://localhost:7072/api/Demos.AzureFunction?name=Jan  
+GET http://localhost:7072/api/GreeterFunction?name=Jan  
