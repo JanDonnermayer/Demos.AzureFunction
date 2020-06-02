@@ -8,11 +8,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace AzureDemos.Function
+namespace Demos.AzureFunction
 {
     public static class GreeterFunction
     {
-        [FunctionName("AzureDemos.Function")]
+        [FunctionName("Demos.AzureFunction")]
         public static async Task<IActionResult> ExecuteAsync(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger logger)

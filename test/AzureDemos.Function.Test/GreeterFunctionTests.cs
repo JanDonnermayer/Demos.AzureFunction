@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http.Internal;
 using System.Collections.Generic;
 
-namespace AzureDemos.Function.Test
+namespace Demos.AzureFunction.Test
 {
     public class GreeterFunctionTests
     {

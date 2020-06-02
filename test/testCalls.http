@@ -1,4 +1,4 @@
-GET https://donnermayer-AzureDemos.Function.azurewebsites.net/api/AzureDemos.Function
+GET https://donnermayer-Demos.AzureFunction.azurewebsites.net/api/Demos.AzureFunction
 
 {
     "name" : "Elisaa",
@@ -7,4 +7,4 @@ GET https://donnermayer-AzureDemos.Function.azurewebsites.net/api/AzureDemos.Fun
 }
 ###
 
-GET http://localhost:7072/api/AzureDemos.Function?name=Jan  
+GET http://localhost:7072/api/Demos.AzureFunction?name=Jan  

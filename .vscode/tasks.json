@@ -24,7 +24,7 @@
             "type": "func",
             "dependsOn": "build",
             "options": {
-                "cwd": "${workspaceFolder}/src/AzureDemos.Function/bin/Debug/netcoreapp3.0"
+                "cwd": "${workspaceFolder}/src/Demos.AzureFunction/bin/Debug/netcoreapp3.0"
             },
             "command": "host start",
             "isBackground": true,

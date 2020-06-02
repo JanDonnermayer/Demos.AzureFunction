@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\AzureDemos.Function\AzureDemos.Function.csproj" />
+    <ProjectReference Include="..\..\src\Demos.AzureFunction\Demos.AzureFunction.csproj" />
   </ItemGroup>
 
 </Project>
